@@ -35,4 +35,16 @@
         android:drawableLeft="@drawable/google_plus"
         android:background="@drawable/roundshapegoogle"/>
 
+    <Button
+        android:text="Connect with VK"
+        android:textColor="@android:color/white"
+        android:id="@+id/connectWithVK"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/vk"
+        android:background="@drawable/roundshapevk"/>
+
 </LinearLayout>

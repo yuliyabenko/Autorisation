@@ -21,6 +21,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.vk.sdk.VKSdk;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnFaceBook;
 
     private Button mBtnGooglePlus;
+
+    private Button mBtnVK;
 
     private CallbackManager callbackManager;
 
@@ -41,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mBtnFaceBook = (Button) findViewById(R.id.connectWithFacebook);
         mBtnGooglePlus = (Button) findViewById(R.id.connectWithGoogle);
+        mBtnVK = (Button) findViewById(R.id.connectWithVK);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
@@ -54,6 +58,13 @@ public class MainActivity extends AppCompatActivity {
                 })
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
+
+        mBtnVK.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                VKSdk.login(MainActivity.this);
+            }
+        });
 
 
         mBtnGooglePlus.setOnClickListener(new View.OnClickListener() {

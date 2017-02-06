@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="150dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.yuliya.autorisation.MainActivity">
+
+
+    <Button
+        android:text="Connect with Facebook"
+        android:textColor="@android:color/white"
+        android:id="@+id/connectWithFacebook"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/facebook"
+        android:background="@drawable/roundshapefacebook"/>
+
+
+    <Button
+        android:text="Connect with Google+"
+        android:textColor="@android:color/white"
+        android:id="@+id/connectWithGoogle"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/google_plus"
+        android:background="@drawable/roundshapegoogle"/>
+
+</LinearLayout>

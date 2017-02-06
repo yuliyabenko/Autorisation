@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "2470576484",
+    "project_id": "firebase-autorisation"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2470576484:android:1ff9d20cab98af08",
+        "android_client_info": {
+          "package_name": "com.yuliya.autorisation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2470576484-94s3ng6gm7er325u5718r9ffottcj12j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO4dJIN1o1PkrQjL-5712o1moEl6Bp2gs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
